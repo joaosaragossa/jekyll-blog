@@ -1,0 +1,18 @@
+// Variáveis
+
+$color-link: #c00
+$text-shadow: 1px 1px 0 rgba(0,0,0,0.5)
+
+// Mixins
+
+@mixin box-sizing
+  -webkit-box-sizing: border-box
+  -moz-box-sizing   : border-box
+  box-sizing        : border-box
+
+@mixin font($font-family)
+  font: 1em "#{$font-family}" sans-serif
+
+@mixin links
+  color: $color-link
+  text-decoration: none
