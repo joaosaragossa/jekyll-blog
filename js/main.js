@@ -1,7 +1,12 @@
 window.onload = function()
 {
   // Header height resize
-  var header = document.getElementById('page-header').style.height = window.innerHeight + "px";
+  
+
+  setInterval(function()
+  {
+    var header = document.getElementById('page-header').style.height = window.innerHeight + "px";
+  },0);
 
   // Post list items height resize
 

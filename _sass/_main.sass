@@ -4,6 +4,8 @@ body
   +box-sizing
   +font("Droid Sans")
   background: #fff
+  color: $text-color
+  line-height: $base-line-height
 
 body,
 header,
@@ -36,7 +38,7 @@ img
   background-size: cover
   color: #fff
   display: table
-  padding: 30px
+  padding: $spacing-unit
   text-align: center
 
   a
@@ -50,6 +52,9 @@ img
   .header-title
     font-size: 2em
 
+  @media screen and (max-width: $tela-pequena)
+    font-size: 0.7em!important
+
   .header-description
     font-size: 1.1em
     margin: 0 auto
@@ -57,18 +62,22 @@ img
     padding-top: 2em
     text-shadow: $text-shadow
 
+  @media screen and (max-width: $tela-pequena)
+    font-size: 0.9em
+
 // MAIN
 
 .page-main
   margin: 0 auto
   max-width: 90%
-  padding: 60px 30px
+  padding: $spacing-unit*2 $spacing-unit
 
   @media screen and (max-width: $tela-media)
     max-width: 100%
 
   @media screen and (max-width: $tela-pequena)
     max-width: 100%
+    padding: 0
 
   &:after
     clear: both
@@ -80,14 +89,31 @@ img
 
 .post-list-item
   background-size: cover
-  display: block
+  display: table
   float: left
-  padding: 30px
+  position: relative
   width: 30%
 
   a
     color: #fff
     text-shadow: $text-shadow
+
+  .list-h1
+    display: table-cell
+    text-align: center
+    vertical-align: middle
+
+  .list-meta
+    +box-sizing
+    background: rgba(#000, 0.5)
+    bottom: 0
+    color: #fff
+    display: block
+    margin: 0
+    padding: $spacing-unit/2
+    position: absolute
+    right: 0
+    width: 100%
 
   @media screen and (max-width: $tela-media)
     width: 50%!important
@@ -103,5 +129,5 @@ img
 
 .page-footer
   background-color: #333
-  padding: 30px
+  padding: $spacing-unit
   text-align: center
