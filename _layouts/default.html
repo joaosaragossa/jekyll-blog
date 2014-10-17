@@ -2,7 +2,7 @@
 <html>
   {% include head.html %}
   <body>
-    {% if site.showheader == "yes" %}{% include header.html %}{% endif %}
+    {% if page.showheader == true %}{% include header.html %}{% endif %}
     <main class="page-main">
       {{ content }}
     </main>

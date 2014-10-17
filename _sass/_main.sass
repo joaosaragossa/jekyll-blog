@@ -5,6 +5,7 @@ body
   +font("Droid Sans")
   background: #fff
   color: $text-color
+  font-size: $base-font-size
   line-height: $base-line-height
 
 body,
@@ -69,8 +70,8 @@ img
 
 .page-main
   margin: 0 auto
-  max-width: 90%
-  padding: $spacing-unit*2 $spacing-unit
+  // max-width: 90%
+  // padding: $spacing-unit*2 $spacing-unit
 
   @media screen and (max-width: $tela-media)
     max-width: 100%
@@ -87,12 +88,22 @@ img
 
 // post-list
 
+#post-list
+  padding: $spacing-unit*2 $spacing-unit
+  margin: 0 auto
+
+  &:after
+    clear: both
+    content: ""
+    display: block
+    width: 100%
+
 .post-list-item
   background-size: cover
   display: table
   float: left
   position: relative
-  width: 30%
+  width: $width/3
 
   a
     color: #fff
@@ -124,6 +135,23 @@ img
 
 // post
 
+#post-header
+  background-size: cover
+  display: table
+  width: 100%
+
+.post-h1
+  color: #fff
+  display: table-cell
+  font-size: 4em
+  text-align: center
+  text-shadow: $text-shadow
+  vertical-align: middle
+
+.post-content
+  margin: 0 auto
+  max-width: 45em
+  padding: $spacing-unit
 
 // FOOTER
 
@@ -131,3 +159,7 @@ img
   background-color: #333
   padding: $spacing-unit
   text-align: center
+
+  h1 a
+    color: #fff
+    text-shadow: $text-shadow
