@@ -1,6 +1,8 @@
 ---
 layout: default
+showheader: "no"
 ---
+{{ site.showheader = "no" }}
 <article class="post">
   <header class="post-header">
     <h1 class="post-h1" href="{{ post.url | prepend: site.baseurl }}">{{ page.title }}</h1>

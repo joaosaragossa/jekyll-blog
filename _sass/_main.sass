@@ -3,7 +3,7 @@
 body
   +box-sizing
   +font("Droid Sans")
-  background: #eee
+  background: #fff
 
 body,
 header,
@@ -26,11 +26,16 @@ h4
 a
   +links
 
+img
+  max-width: 100%
+
 // HEADER
 
 .page-header
   background-color: #333
+  background-size: cover
   color: #fff
+  display: table
   padding: 30px
   text-align: center
 
@@ -38,23 +43,65 @@ a
     color: #fff
     text-shadow: $text-shadow
 
+  .header-content
+    display: table-cell
+    vertical-align: middle
+
   .header-title
     font-size: 2em
 
   .header-description
+    font-size: 1.1em
     margin: 0 auto
-    width: 60%
+    max-width: 60%
+    padding-top: 2em
+    text-shadow: $text-shadow
 
 // MAIN
 
 .page-main
   margin: 0 auto
-  max-width: 50em
-  padding: 1em
+  max-width: 90%
+  padding: 60px 30px
+
+  @media screen and (max-width: $tela-media)
+    max-width: 100%
+
+  @media screen and (max-width: $tela-pequena)
+    max-width: 100%
+
+  &:after
+    clear: both
+    content: ""
+    display: block
+    width: 100%
+
+// post-list
+
+.post-list-item
+  background-size: cover
+  display: block
+  float: left
+  padding: 30px
+  width: 30%
+
+  a
+    color: #fff
+    text-shadow: $text-shadow
+
+  @media screen and (max-width: $tela-media)
+    width: 50%!important
+
+  @media screen and (max-width: $tela-pequena)
+    width: 100%!important
+    float: none
 
 // post
 
-.post
-  background: #fff
-  margin: 30px 0
+
+// FOOTER
+
+.page-footer
+  background-color: #333
   padding: 30px
+  text-align: center

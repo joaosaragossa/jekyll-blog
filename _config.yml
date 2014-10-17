@@ -12,3 +12,6 @@ github_username:  joaosaragossa
 
 # Build settings
 markdown: kramdown
+
+# Mostrar Header
+showheader: "yes"

@@ -6,6 +6,6 @@
     <main class="page-main">
       {{ content }}
     </main>
-    {% include footer.html %}
+    {% if site.showheader == "yes" %}{% include footer.html %}{% endif %}
   </body>
 </html>
