@@ -1,5 +1,6 @@
 # Site settings
 title: Blog com Jekyll
+author: João Saragossa
 email: joaosaragossa.dev@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Esta é a descrição do blog. Jekyll é sensacional!
