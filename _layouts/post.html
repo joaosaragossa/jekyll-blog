@@ -10,8 +10,5 @@ showheader: false
   <div class="post-content">
     <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
     {{ content }}
-    <footer class="post-footer">
-      <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-    </footer>
   </div>
 </article>
