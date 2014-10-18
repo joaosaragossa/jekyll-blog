@@ -41,6 +41,7 @@ img
   display: table
   padding: $spacing-unit
   text-align: center
+  width: 100%
 
   a
     color: #fff
@@ -157,10 +158,33 @@ img
 // FOOTER
 
 .page-footer
-  background-color: #333
+  background-color: #111
   padding: $spacing-unit
   text-align: center
 
   h1 a
     color: #fff
-    text-shadow: $text-shadow
+    font-size: 1.5em
+    +transition(color,0.5s)
+
+    &:hover
+      color: #36f
+      +transition(color,0.5s)
+
+  a .fa
+    color: #fff
+    font-size: 1.5em
+    margin: 0 0 0 0.5em
+    +transition(color,0.5s)
+
+  .fa-github:hover
+    color: #444
+    +transition(color,0.5s)
+
+  .fa-twitter:hover
+    color: #4099ff
+    +transition(color,0.5s)
+
+  .fa-rss:hover
+    color: #ff6600
+    +transition(color,0.5s)
