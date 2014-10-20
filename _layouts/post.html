@@ -12,4 +12,10 @@ showheader: false
     {{ content }}
   </div>
 </article>
+{% for c in page.comments %}
+  <p>
+    {{c.content}}
+  </p>
+  <hr />
+{% endfor %}
 {% include comment_template.html %}
