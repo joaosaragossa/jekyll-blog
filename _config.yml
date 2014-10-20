@@ -1,13 +1,14 @@
 # Site settings
-title: Blog com Jekyll
+title: Qualquer coisa
 author: João Saragossa
 email: joaosaragossa.dev@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Esta é a descrição do blog. Jekyll é sensacional!
-baseurl: "/jekyll-blog" # the subpath of your site, e.g. /blog/
-url: "http://joaosaragossa.github.io" # the base hostname & protocol for your site
+  Mesmo.
+baseurl: "/jekyll-blog"
+url: "http://joaosaragossa.github.io"
 twitter_username: joaosaragossa
 github_username:  joaosaragossa
+permalink: /:title
 
 # Build settings
 markdown: kramdown

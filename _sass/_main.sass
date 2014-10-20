@@ -58,11 +58,30 @@ img
     font-size: 1.1em
     margin: 0 auto
     max-width: 60%
-    padding-top: 2em
+    padding-top: 0.5em
     text-shadow: $text-shadow
 
     @media screen and (max-width: $tela-pequena)
       font-size: 2em
+
+// NAV
+
+.page-nav
+  +box-sizing
+  padding: $spacing-unit/2
+
+  ul
+    +box-sizing
+    margin: 0 auto
+    text-align: center
+    width: 100%
+
+    li
+      display: inline-block
+
+      a
+      font-size: 0.9em
+      padding: $spacing-unit/2 $spacing-unit
 
 // MAIN
 
@@ -87,7 +106,7 @@ img
 // post-list
 
 #post-list
-  padding: $spacing-unit*2 $spacing-unit
+  padding: 0 $spacing-unit
   margin: 0 auto
 
   &:after
@@ -165,6 +184,7 @@ img
 
 .page-footer
   background-color: #111
+  margin-top: $spacing-unit*2
   padding: $spacing-unit
   text-align: center
 

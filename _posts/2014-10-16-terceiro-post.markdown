@@ -3,7 +3,6 @@ layout: post
 title:  "Terceiro Post"
 date:   2014-10-16 18:11:02
 author: João Paulo Saragossa
-permalink: terceiro-post
 categories: post
 headerimage: "/img/articlebg03.jpg"
 ---
